@@ -1,0 +1,13 @@
+﻿  main.cpp
+main.cpp(199): warning C4018: '<': signed/unsigned mismatch
+main.cpp(222): warning C4018: '<': signed/unsigned mismatch
+main.cpp(105): warning C4101: 'vx': unreferenced local variable
+main.cpp(105): warning C4101: 'vy': unreferenced local variable
+main.cpp(105): warning C4101: 'vz': unreferenced local variable
+  Generating code
+  1 of 33 functions ( 3.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  CG_HW1.vcxproj -> C:\Users\AndyLiu\Desktop\CG_HW1\CG_HW1\CG_HW1\Release\CG_HW1.exe
+  CG_HW1.vcxproj -> C:\Users\AndyLiu\Desktop\CG_HW1\CG_HW1\CG_HW1\Release\CG_HW1.pdb (Full PDB)
