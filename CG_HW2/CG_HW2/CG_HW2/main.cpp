@@ -394,7 +394,7 @@ Vector3 Ry(0, 0, 0);
 Vector3 Rz(0, 0, 1);
 GLfloat eye_x = 0;
 GLfloat eye_y = 0;
-GLfloat eye_z = 5;
+GLfloat eye_z = 3;
 
 GLfloat center_x = 0;
 GLfloat center_y = 0;
@@ -515,8 +515,8 @@ void onDisplay(void)
 
 	up = Vector3(0, 1, 0);
     Vector3 t_x = Vector3(eye_x, 0, 0);
-	Forward = center - eye;
-	Right = Forward.cross(up);
+	Forward = (center - eye).normalize();
+	Right = Forward.cross(up).normalize();
 	up_vector = Right.cross(Forward) ;
 	
 	up = eye + up_vector ;
@@ -1091,7 +1091,7 @@ int main(int argc, char **argv)
 	// create window
 	glutInitWindowPosition(500, 100);
 	glutInitWindowSize(800, 800);
-	glutCreateWindow("10420 CS550000 CG HW1 TA");
+	glutCreateWindow("103060004 CG HW2 ");
 
 	glewInit();
 	if (glewIsSupported("GL_VERSION_2_0")) {
